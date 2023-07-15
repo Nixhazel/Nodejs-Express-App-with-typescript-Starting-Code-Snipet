@@ -23,7 +23,8 @@ Conversion from javascript to Typescript , procedures
 14. run yarn dev<br>
 15. enter /src and change all .ts files require = "" <br>
             to imports from and export default app and add "../" to app.set("views/"<br>
-16. add {HttpError} in createError import function<br>
+16. add {HttpError} in createError import function and add {Request, Response, NextFunction } to the express import and app.set('views', path.join(__dirname, "../", 'views'));<br>
+
 17. run yarn add <package name> --d on all the imports with error<br>
 18. enter /bin/www and chnage to var app =require("--dist/app").default <br>
 
